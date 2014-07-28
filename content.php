@@ -44,7 +44,7 @@
 		<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<?php endif; ?>
 
-		<?php et_postinfo_meta(); ?>
+		
 
 		<div class="entry-content clearfix">
 		<?php
@@ -61,7 +61,7 @@
 
 			edit_post_link( esc_attr__( 'Edit this post', 'Serene' ) );
 		} else {
-			the_excerpt();
+			the_content();
 		}
 		?>
 		</div>

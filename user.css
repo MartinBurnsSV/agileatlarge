@@ -1,0 +1,505 @@
+@import "http://fonts.googleapis.com/css?family=Lora:400,400italic,700italic,700";
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700italic,700";
+
+/*
+
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+
+
+/* Colour definitions, per Pantone(R) */
+
+
+//**** Fall 2014 ****//
+ /* PANTONE 18-3224 */  $radiantorchid: #B163A3;
+ /* PANTONE 19-3955 */  $royalblue: #3F448C;
+ /* PANTONE 16-1107 */  $aluminium: #9C9688;
+ /* PANTONE 18-1550 */  $aurorared: #B93A3E;
+ /* PANTONE 14-0837 */  $mistedyellow: #DBB960;
+ /* PANTONE 19-2047 */  $sangria: #9D3158;
+ /* PANTONE 18-1421 */  $cognac: #886159;
+ /* PANTONE 19-4037 */  $brightcobalt: #355E91;
+ /* PANTONE 18-0322 */  $cypress: #525B41;
+ /* PANTONE 16-3304 */  $seafog: #A593A1;
+
+
+//**** Afternoon at the Met ****//
+ /* PANTONE 457			*/ $antiquecitron:	#B89D18;
+ /* PANTONE 461			*/ $antiquesun: 		#E9DF97;
+ /* PANTONE 5615		*/ $greennymph: 		#5E7461;
+ /* PANTONE 7617		*/ $oldchestnut: 		#583D3E;
+
+
+//**** Neutrals ****//
+/* PANTONE 11-4202	*/ $starwhite:			#EDEFEC;
+/* PANTONE 12-0105	*/ $bonewhite:			#D8D4C2;
+/* PANTONE 14-4103	*/ $grayviolet:			#C0C4C3;
+/* PANTONE 19-4203	*/ $moonlessnight:	#2E3235;
+
+//**** CityHaze ****//
+/* PANTONE Cool Gray 9	*/ $polishedgray:		#878785;
+/* PANTONE Cool Gray 3	*/ $citysky:				#CFC9C4;
+/* PANTONE 4545					*/ $springhaze:			#E5DBBA;
+/* PANTONE 451					*/ $earlyolive:			#ada07a;
+
+
+
+/* Brand Colours */
+$primary: $royalblue;
+$accent: $aurorared;
+$secondary: $cognac;
+$light: $aluminium;
+
+body {
+	// background-color: $light;
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 400;
+	}
+
+	#logo a {
+		color: $primary;
+		font-weight: 400;
+	}
+	#top-menu a {
+		color: $light;
+	}
+
+#footer-info  {
+		background-color: $seafog;
+		font-size: 60%;
+		padding-bottom:30px;
+		margin-bottom:0;
+}
+
+#main-footer  {
+		padding-bottom:0px;
+}
+
+//*** Article text styling **//
+
+article.post ol,.comment-content ol,article.page ol {
+			 list-style-position: outside;
+			 margin-left: 23px;
+			 padding: 0 0 23px 0;
+			 li {
+				margin-bottom: 23px;
+				li {
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+
+article  {
+		.lede {
+			font-weight:bold;
+			color: $primary;
+			 }	
+		p + p {
+			text-indent: 1.5em;
+			 }
+
+
+		h2, h3, h4, h5, h6 {
+			 font-weight: 700;
+			 color: $secondary;
+		}
+	}
+
+// Top Icons //
+
+.et-social-twitter a:hover {
+		color: $brightcobalt;
+}
+
+.et-social-icon a {
+		background: $aluminium;
+}
+
+.et-social-icon a:hover {
+		background-color: #fff;
+		color: $seafog;
+}
+
+
+// Quotes //
+
+ .format-quote.sticky .post-content {
+		padding-top: 20px;
+		padding-bottom: 10px;
+}	
+
+.single-post .format-quote .sticky .post-content {
+		padding-top: 103px;
+		padding-bottom: 118px;
+}	
+
+.format-quote .top-info, .format-quote .top-info p {
+		text-align: center;
+		color: inherit;
+}
+
+.format-quote .top-info blockquote {
+		text-transform: none;
+		font-size: 68px;
+		line-height: 82px;
+		border: none;
+		padding: 0;
+		margin: 0;
+		font-family: 'Lora' /*, Georgia, serif*/; 
+		font-weight: 400;
+		font-style: italic;
+}
+
+.format-quote .top-info cite {
+		font-size: 28px;
+}
+
+.page blockquote, .article blockquote, .article q, .page q {
+		font-family: 'Lora' , Georgia, serif; 
+		font-weight: 400;
+		font-style: italic;
+		cite {
+			font-size: 70%;
+		}
+}
+
+// Hide QR Code Widget - print only
+#footer-widgets .sqrw-widget, #footer-widgets #text-10 {
+	display: none;
+}
+
+
+
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+html {
+  /* Change default typefaces here */
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* -----------------------------------------------------------------------
+
+
+ Blueprint CSS Framework 1.0.1
+ http://blueprintcss.org
+
+   * Copyright (c) 2007-Present. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+/* typography.css */
+html {font-size:100.01%;}
+article {
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.5em;}
+.left {float:left !important;}
+p .left {margin:1.5em 1.5em 1.5em 0;padding:0;}
+.right {float:right !important;}
+p .right {margin:1.5em 0 1.5em 1.5em;padding:0;}
+a:focus, a:hover {color:$sangria;}
+a {color:$radiantorchid;text-decoration:underline;}
+
+blockquote {margin:1.5em;color:$primary;font-style:italic;}
+strong, dfn {font-weight:bold;}
+em, dfn {font-style:italic;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0;}
+//ul, ol {margin:0 1.5em 1.5em 0;padding-left:1.5em;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+}
+.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.hide {display:none;}
+.quiet {color:$aluminium;}
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+
+
+/* forms.css */
+label {font-weight:bold;}
+fieldset {padding:0 1.4em 1.4em 1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+legend {font-weight:bold;font-size:1.2em;margin-top:-0.2em;margin-bottom:1em;}
+fieldset, #IE8#HACK {padding-top:1.4em;}
+legend, #IE8#HACK {margin-top:0;margin-bottom:0;}
+input[type=text], input[type=password], input[type=url], input[type=email], input.text, input.title, textarea {background-color:#fff;border:1px solid #bbb;color:#000;}
+input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus, input.text:focus, input.title:focus, textarea:focus {border-color:#666;}
+select {background-color:#fff;border-width:1px;border-style:solid;}
+input[type=text], input[type=password], input[type=url], input[type=email], input.text, input.title, textarea, select {margin:0.5em 0;}
+input.text, input.title {width:300px;padding:5px;}
+input.title {font-size:1.5em;}
+textarea {width:390px;height:250px;padding:5px;}
+form.inline {line-height:3;}
+form.inline p {margin-bottom:0;}
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error, .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+.notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
+.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+.info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+.error a, .alert a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+.info a {color:#205791;}
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------
+
+Media queries for responsive sizing - sizes above override, so this needed to reset.
+
+----------------------------------------------------------------------- */
+
+@media only screen and ( min-width: 961px ) and ( max-width: 1300px ) {
+	.format-quote .top-info .post-content {
+		padding: 30px 100px;
+	}
+	.format-quote .top-info blockquote {
+		font-size: 54px;
+		line-height: 67px;
+	}
+	.format-quote .top-info blockquote cite {
+		font-size: 20px;
+	}
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
+    #main-header {
+      margin-top: 80px;
+      }		
+    #logo {
+      line-height: 38px;
+    }
+    .format-quote .top-info .post-content {
+      padding: 20px 80px;
+    }
+    .format-quote .top-info blockquote {
+      font-size: 54px;
+      line-height: 67px;
+    }
+    .format-quote .top-info  cite {
+      font-size: 24px;
+    }
+  }
+
+@media only screen and ( max-width: 768px ) {
+		#main-header {
+			margin-top: 30px;
+		}		
+		#logo {
+			font-size: 32px;
+			letter-spacing: 6px;
+			line-height: 38px;
+		}
+		.format-quote .top-info .post-content {
+			padding: 20px 40px;
+		}
+		.format-quote .top-info blockquote {
+			font-size: 32px;
+			line-height: 40px;
+		}
+		.format-quote .top-info cite {
+			font-size: 20px;
+		}
+	}
+
+@media only screen and ( max-width: 479px ) {
+		#container {
+			width: 369px;
+		}
+		#main-header {
+			margin-top: 10px;
+		}		
+		#logo {
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 3px;
+			line-height: 38px;
+		}
+		.format-quote .top-info .post-content {
+			padding: 20px 20px;
+		}
+		.format-quote .meta-date,.format-quote .comments-count,.format-link .meta-date,.format-link .comments-count {
+			top: 0;
+		}
+		.format-quote .top-info blockquote {
+			font-size: 26px;
+			line-height: 28px;
+		}
+		.format-quote .top-info cite {
+			font-size: 14px;
+		}
+	}
+
+/* Bits and bobs from http://webdesign.tutsplus.com/articles/a-web-designers-typographic-boilerplate--webdesign-15234 */
+
+/* Additional print styling via Adrian Roselli  */
+/* http://www.slideshare.net/aardrian/css-summit-2014-making-your-site-printable */
+
+ 
+@media print {
+    * { background: transparent !important;
+			color: #000 !important; /* Black prints faster: h5bp.com/s */
+			box-shadow: none !important;
+			text-shadow: none !important;
+			font-family: 'Lora' , Georgia, serif;
+			}
+		th, .lede {
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			font-weight: 700;
+			}
+		#main-header {
+			margin-top: 0;
+		}
+		#container {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		article, .entry-content,  .post-content, 	.footer-widget {
+			font-size: 10pt;
+			margin: 0;
+			padding:0;
+		}
+		article, .entry-content, .post-content, .footer-widget {
+			.su-table  {
+				padding-right: 5%;
+			}
+	
+			li, p {
+				line-height: 14pt;
+			}
+			p {
+				orphans: 3;
+				widows: 2;
+			}
+			h1, h2  {
+				page-break-after: never; 
+				margin-bottom: 0; 
+				font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+				font-weight: 400;
+			} 
+			h3, h4, h5, h6  {
+				page-break-after: avoid; 
+				margin-bottom: 0;
+				font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+					font-weight: 400;
+			} 
+
+		}
+			h1  { font-size: 24pt; line-height: 36pt; padding-top: 20px;} 
+			h2  { font-size: 18pt; line-height: 30pt; } 
+			h3  { font-size: 16pt; line-height: 22.4pt; } 
+			h4  { font-size: 12pt; line-height: 16.8pt; } 
+			h5  { font-size: 10pt; } 
+			h6  { font-size: 10pt; }
+			a[href]:after {
+				content: " [" attr(href) "] ";
+				wordwrap: break-word;
+				font-size: 8pt;
+			}
+			.main-image a[href]:after, h1 a[href]:after, h2 a[href]:after, a[href^="#"]:after, article a[href^="tel"]:after, article a[href^="javascript"]:after {
+				content: "";
+			}
+
+
+		body.single article.post p,body.page article.page p {
+			margin-bottom: 10pt;
+		}
+
+		#top-menu, #et-social-icons, #et_mobile_nav_menu, .widget_twitter_timeline, .widget_search, .widget_nav_menu, #footer-info {
+			display:none;
+		}
+			
+		.format-quote .top-info {
+			border-top: 1px solid black;
+			border-bottom: 2px solid black;
+			font-family: 'Lora', Georgia, serif; 
+			font-weight: 400;
+			font-style: italic;
+			blockquote {
+				font-size: 14pt;
+				line-height: 30pt;
+			}		
+			cite {
+				font-size: 10pt;
+				line-height: 14pt;
+			}		
+		}
+
+	h2.title a {
+				font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+				font-size: 40px;
+				font-weight: 100;
+				padding-top: 50px;
+		}
+
+	// Footer Widgets
+	#footer-widgets {
+		width: 100%;
+		margin:0;
+		padding:0;
+		border-top: 1px solid black;
+		// Show QR Code Widget - print only
+	.sqrw-widget, #text-10 {
+		display: block;
+	}
+	}
+	.footer-widget {
+		float: left;
+		width: 30%;
+		padding-right: 20px;
+		.textwidget p  {
+		font-size: 9pt;
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+		}
+		h4.widgettitle {
+			page-break-inside: avoid;
+			page-break-after: avoid;
+			hyphens: none;
+		}
+	}
+
+
+
+}

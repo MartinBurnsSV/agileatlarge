@@ -513,7 +513,7 @@ Media queries for responsive sizing - sizes above override, so this needed to re
     	content: counter(section) "	";
     	counter-increment: section;
 	}
-	ol { list-style-type: none; }
+	ol, ol>li { list-style-type: none; }
 	li {margin-bottom: 1rem;}
 	ol>li::before {
     	content: counter(section) "." counter(subsection) "	";
